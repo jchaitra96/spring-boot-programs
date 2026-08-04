@@ -1,0 +1,12 @@
+server:
+  port: 8888
+
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/jchaitra96/spring-boot-programs.git
+          default-label: master
+          clone-on-start: true
+          search-paths: config-servers
