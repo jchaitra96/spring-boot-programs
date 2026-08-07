@@ -2,11 +2,13 @@ server:
   port: 8888
 
 spring:
+  application:
+    name: config-server
+
   cloud:
     config:
       server:
         git:
-          uri: https://github.com/jchaitra96/spring-boot-programs.git
+          uri: https://github.com/brundagowda15/spring-boot-programs.git
           default-label: master
           clone-on-start: true
-          search-paths:  ola-service/src/main/resources
